@@ -1,6 +1,8 @@
 import json
 import os
 
+"""Proyecto llamado task manager pro, que permite gestionar tarear y tener persistencia
+de datos y tenes persistencia atraves de un archivo JSON"""
 ARCHIVO_TAREAS = "tareas.json"
 
 def agregar_tarea(tareas):
