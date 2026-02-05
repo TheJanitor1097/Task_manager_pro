@@ -1,12 +1,10 @@
-import json
-import os
 import funciones
 
 """Proyecto llamado task manager pro, que permite gestionar tarear y tener persistencia
 de datos y tenes persistencia atraves de un archivo JSON"""
 
 def menu():
-    tareas = cargar_tareas()
+    tareas = funciones.cargar_tareas()
 
     while True:
         print("""
@@ -21,13 +19,13 @@ TASK MASTER PRO
         opcion = input("Elige una opción: ")
 
         if opcion == "1":
-            mostrar_tareas(tareas)
+            funciones.mostrar_tareas(tareas)
         elif opcion == "2":
-            agregar_tarea(tareas)
+            funciones.agregar_tarea(tareas)
         elif opcion == "3":
-            completar_tarea(tareas)
+            funciones.completar_tarea(tareas)
         elif opcion == "4":
-            eliminar_tarea(tareas)
+            funciones.eliminar_tarea(tareas)
         elif opcion == "5":
             print("¡Hasta luego!")
             break
